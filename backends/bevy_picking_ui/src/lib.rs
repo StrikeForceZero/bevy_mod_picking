@@ -23,7 +23,7 @@
 #![deny(missing_docs)]
 
 use bevy_app::prelude::*;
-use bevy_ecs::{prelude::*, query::WorldQuery};
+use bevy_ecs::{prelude::*, query::QueryData};
 use bevy_math::prelude::*;
 use bevy_render::{camera::NormalizedRenderTarget, prelude::*};
 use bevy_transform::prelude::*;
@@ -47,8 +47,8 @@ impl Plugin for BevyUiBackend {
 }
 
 /// Main query from bevy's `ui_focus_system`
-#[derive(WorldQuery)]
-#[world_query(mutable)]
+#[derive(QueryData)]
+#[query_data(mutable)]
 pub struct NodeQuery {
     entity: Entity,
     node: &'static Node,
