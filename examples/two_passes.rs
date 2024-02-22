@@ -1,9 +1,9 @@
-//! Demonstrates that picking respects camera render order.
+// Demonstrates that picking respects camera render order.
 
 use bevy::{render::camera::ClearColorConfig, prelude::*};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

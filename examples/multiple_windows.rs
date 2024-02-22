@@ -1,9 +1,9 @@
-//! Demonstrates picking working with multiple windows.
+// Demonstrates picking working with multiple windows.
 
 use bevy::{prelude::*, render::camera::RenderTarget, window::WindowRef};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

@@ -1,9 +1,9 @@
-//! A test of very large hierarchies for stress testing event listening.
+// A test of very large hierarchies for stress testing event listening.
 
 use bevy::prelude::*;
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(WindowPlugin {

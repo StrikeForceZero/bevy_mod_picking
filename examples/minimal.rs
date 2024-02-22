@@ -1,9 +1,9 @@
-//! A minimal example of how to add picking support to your bevy app.
+// A minimal example of how to add picking support to your bevy app.
 
 use bevy::prelude::*;
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(low_latency_window_plugin()))
         // All you need to do is add the picking plugin, with your backend of choice enabled in the

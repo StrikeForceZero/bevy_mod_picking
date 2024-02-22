@@ -94,6 +94,11 @@ backend_bevy_ui = ["bevy_picking_ui", "bevy_ui"]
 backend_egui = ["bevy_picking_egui", "bevy_egui"]
 
 [[example]]
+name = "all_examples"
+path = "examples/all_examples.rs"
+required-features = ["all"]
+
+[[example]]
 name = "rapier"
 path = "examples/rapier.rs"
 required-features = ["backend_rapier"]

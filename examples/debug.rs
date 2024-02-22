@@ -1,12 +1,12 @@
-//! Shows how to toggle debug logging and the pointer debug overlay at runtime
-//!
-//! This is all essentially identical to bevy_ui, except the buttons
-//! are configured to send custom events, and new small systems which
-//! react to the button clicks. `cycle_logging()` shows how to change
-//! the State which controls debug log verbosity.
-//!
-//! Note that the visual overlay next to the pointer is enabled with
-//! debug logging on, and disabled when it is off.
+// Shows how to toggle debug logging and the pointer debug overlay at runtime
+//
+// This is all essentially identical to bevy_ui, except the buttons
+// are configured to send custom events, and new small systems which
+// react to the button clicks. `cycle_logging()` shows how to change
+// the State which controls debug log verbosity.
+//
+// Note that the visual overlay next to the pointer is enabled with
+// debug logging on, and disabled when it is off.
 
 use bevy::{app::AppExit, log::LogPlugin};
 use bevy::{ecs::system::EntityCommands, prelude::*};
@@ -59,7 +59,7 @@ fn shutdown(mut exit_events: EventWriter<bevy::app::AppExit>) {
     exit_events.send(AppExit);
 }
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins(
             DefaultPlugins

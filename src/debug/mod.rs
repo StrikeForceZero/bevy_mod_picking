@@ -134,7 +134,9 @@ impl Plugin for DebugPickingPlugin {
                 debug_draw.run_if(|r: Option<Res<bevy_egui::EguiUserTextures>>| r.is_none()),
                 // if egui is available, always draw the egui debug if possible
                 #[cfg(feature = "backend_egui")]
-                debug_draw_egui.run_if(|r: Option<Res<bevy_egui::EguiUserTextures>>| r.is_some()),
+                debug_draw_egui
+                    .run_if(|r: Option<Res<bevy_egui::EguiUserTextures>>| r.is_some())
+                    .after(bevy_egui::systems::begin_frame_system),
             )
                 .chain()
                 .distributive_run_if(DebugPickingMode::is_enabled)

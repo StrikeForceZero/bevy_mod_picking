@@ -1,9 +1,9 @@
-//! Use bevy's split screen example to test viewports with this plugin.
+// Use bevy's split screen example to test viewports with this plugin.
 
 use bevy::prelude::*;
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

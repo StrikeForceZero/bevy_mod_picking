@@ -1,9 +1,9 @@
-//! A minimal 2d example.
+// A minimal 2d example.
 
 use bevy::{prelude::*, sprite::MaterialMesh2dBundle};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(low_latency_window_plugin()))
         .add_plugins(DefaultPickingPlugins)

@@ -1,5 +1,5 @@
-//! Demonstrates how to spawn and control a virtual pointer, useful for integration testing or
-//! something like a gamepad-controlled software pointer.
+// Demonstrates how to spawn and control a virtual pointer, useful for integration testing or
+// something like a gamepad-controlled software pointer.
 
 use bevy::{
     prelude::*,
@@ -9,7 +9,7 @@ use bevy::{
 };
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

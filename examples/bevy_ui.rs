@@ -1,9 +1,9 @@
-//! This example demonstrates how to use the plugin with bevy_ui.
+// This example demonstrates how to use the plugin with bevy_ui.
 
 use bevy::{ecs::system::EntityCommands, prelude::*};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(low_latency_window_plugin()))
         .add_plugins(DefaultPickingPlugins)

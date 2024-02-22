@@ -3,7 +3,7 @@ use std::f32::consts::FRAC_PI_2;
 use bevy::{prelude::*, sprite::MaterialMesh2dBundle};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     let mut app = App::new();
     app.add_plugins((
         DefaultPlugins.set(low_latency_window_plugin()),

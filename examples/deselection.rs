@@ -1,10 +1,10 @@
-//! This example is identical to the minimal example, except a cube has been added that when clicked
-//! on, won't deselect anything else you have selected.
+// This example is identical to the minimal example, except a cube has been added that when clicked
+// on, won't deselect anything else you have selected.
 
 use bevy::prelude::*;
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins(DefaultPlugins.set(low_latency_window_plugin()))
         .add_plugins(DefaultPickingPlugins)

@@ -1,4 +1,4 @@
-//! A stress test for picking and events with many interactive elements.
+// A stress test for picking and events with many interactive elements.
 
 use bevy::{
     diagnostic::{FrameTimeDiagnosticsPlugin, LogDiagnosticsPlugin},
@@ -11,7 +11,7 @@ const ROW_COLUMN_COUNT: usize = 110;
 const FONT_SIZE: f32 = 7.0;
 
 /// This example shows what happens when there is a lot of buttons on screen.
-fn main() {
+pub fn main() {
     let mut app = App::new();
 
     app.add_plugins((

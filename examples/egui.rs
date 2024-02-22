@@ -1,8 +1,8 @@
-//! This example demonstrates how backends can be mixed and matched, specifically with egui. Here,
-//! we are using the egui backend, which is enabled automatically in `DefaultPickingPlugins` when
-//! the "egui_backend" feature is enabled. The egui backend will automatically apply a `NoDeselect`
-//! component to the egui entity, which allows you to interact with the UI without deselecting
-//! anything in the 3d scene.
+// This example demonstrates how backends can be mixed and matched, specifically with egui. Here,
+// we are using the egui backend, which is enabled automatically in `DefaultPickingPlugins` when
+// the "egui_backend" feature is enabled. The egui backend will automatically apply a `NoDeselect`
+// component to the egui entity, which allows you to interact with the UI without deselecting
+// anything in the 3d scene.
 
 use bevy::prelude::*;
 use bevy_egui::{
@@ -11,7 +11,7 @@ use bevy_egui::{
 };
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

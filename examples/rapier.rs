@@ -1,10 +1,10 @@
-//! Demonstrates how to use the rapier picking backend.
+// Demonstrates how to use the rapier picking backend.
 
 use bevy::prelude::*;
 use bevy_mod_picking::prelude::*;
 use bevy_rapier3d::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

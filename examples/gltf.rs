@@ -1,11 +1,11 @@
-//! Demonstrates how to make a gltf pickable. Clicking on any mesh will print out the entity that
-//! was clicked on, even though we only need to add an `On<Pointer<Event>>` event listener to the
-//! root of the scene.
+// Demonstrates how to make a gltf pickable. Clicking on any mesh will print out the entity that
+// was clicked on, even though we only need to add an `On<Pointer<Event>>` event listener to the
+// root of the scene.
 
 use bevy::{math::vec4, prelude::*};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

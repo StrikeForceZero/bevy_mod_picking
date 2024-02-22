@@ -1,10 +1,10 @@
-//! If you are using the provided highlighting plugin, this example demonstrates how you can define
-//! dynamic tints that run a closure to determine the color of a highlight.
+// If you are using the provided highlighting plugin, this example demonstrates how you can define
+// dynamic tints that run a closure to determine the color of a highlight.
 
 use bevy::{math::vec4, prelude::*};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

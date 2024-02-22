@@ -1,10 +1,10 @@
-//! Demonstrates that picking respects render layers and order.
+// Demonstrates that picking respects render layers and order.
 
 use bevy::{render::camera::ClearColorConfig, prelude::*};
 use bevy_mod_picking::prelude::*;
 use bevy_render::view::RenderLayers;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),

@@ -1,10 +1,10 @@
-//! Demonstrates how to use the bevy_sprite picking backend. This backend simply tests the bounds of
-//! a sprite.
+// Demonstrates how to use the bevy_sprite picking backend. This backend simply tests the bounds of
+// a sprite.
 
 use bevy::{prelude::*, sprite::Anchor};
 use bevy_mod_picking::prelude::*;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((
             DefaultPlugins.set(low_latency_window_plugin()),
