@@ -18,7 +18,7 @@ bevy_ecs = { version = "0.14.0", default-features = false }
 bevy_reflect = { version = "0.14.0", default-features = false }
 bevy_render = { version = "0.14.0", default-features = false }
 
-bevy_egui = ">=0.25, <= 0.27"
+bevy_egui = { git = "https://github.com/Friz64/bevy_egui.git", rev = "7eb1191ddf1cc358c9d502d39d215f6f2ed732a1" }
 # Local
 bevy_picking_core = { path = "../../crates/bevy_picking_core", version = "0.20.0" }
 bevy_picking_selection = { path = "../../crates/bevy_picking_selection", optional = true, version = "0.20.0" }
